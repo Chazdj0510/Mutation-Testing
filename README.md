@@ -12,20 +12,27 @@ The following mutants were introduced into the code, each representing a small c
 
 1. Mutant 1: Addition Mutation
 
-   - Changed the + operator in the __add__ method to -, reversing the addition to subtraction.
+   - Changed the `+` operator in the `__add__` method to `-`, reversing the addition to subtraction.
    - This tests if the code handles the change from adding to subtracting polynomial coefficients.
 2. Mutant 2: Multiplication Mutation
 
-   - Changed the * operator in the __mul__ method to +, turning polynomial multiplication into polynomial addition.
+   - Changed the `*` operator in the `__mul__` method to `+`, turning polynomial multiplication into polynomial addition.
    - This tests if the code distinguishes between multiplication and addition.
 3. Mutant 3: Evaluation Mutation
 
-   - Modified the evaluate method to ignore the first coefficient during polynomial evaluation.
+   - Modified the `evaluate` method to ignore the first coefficient during polynomial evaluation.
    - This tests whether the evaluation method correctly handles the entire polynomial.
 4. Mutant 4: Logical Mutation
 
-   - Changed the equality check == in the __add__ method to !=, altering the logic of the polynomial addition.
+   - Changed the equality check `==` in the `__add__` method to `!=`, altering the logic of the polynomial addition.
    - This tests whether the code catches logical errors in the polynomial addition logic.
+
+## Mutation Testing Process
+1. Each mutant file was placed in the mutants/ folder along with a test file placed in the tests/ folder.
+2. The pytest testing framework was used to run the tests for each mutant.
+3. The results were evaluated based on whether the tests detected the mutant or not:
+   - If the test fails with the mutant, the mutant is considered killed (i.e., the test suite is effective).
+   - If the test passes with the mutant, the mutant survives (i.e., the test suite is ineffective against that type of change).
 
 ## Features
 
