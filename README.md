@@ -60,6 +60,8 @@ To run the example usage provided in `polynomials.py`, excute:
 python polynomial.py
 ```
 
+---
+
 ## Testing
 The repository includes a test suite (`test_polynomial.py`) to ensure the functionality of the `Polynomial` class. Run the tests using:
 ```bash
@@ -74,4 +76,12 @@ collected 8 items
 test_poly.py .......                                  [100%]
 
 ==================== 8 passed in 0.12s ====================
+```
 
+---
+
+## File Structure
+- `polynomial.py`: Implementation of the `Polynomial` class.
+- `test_poly.py`: Test cases using `pytest`.
+
+---
