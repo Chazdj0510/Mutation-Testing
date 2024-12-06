@@ -24,8 +24,8 @@ This project provides a `Polynomial` class in Python that supports creating, eva
 ### Installation
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/repo-name.git
-   cd repo-name
+   git clone https://github.com/Chazdj0510/Mutation-Testing.git
+   cd Mutation-Testing
 2. Install `pytest`:
    ```bash
    pip install pytest
@@ -85,3 +85,6 @@ test_poly.py .......                                  [100%]
 - `test_poly.py`: Test cases using `pytest`.
 
 ---
+
+## Acknowledgments
+This project was developed as a hands-on example for polynomial operations and testing in Python.
