@@ -12,20 +12,20 @@ The following mutants were introduced into the code, each representing a small c
 
 1. Mutant 1: Addition Mutation
 
-- Changed the + operator in the __add__ method to -, reversing the addition to subtraction.
-- This tests if the code handles the change from adding to subtracting polynomial coefficients.
+   - Changed the + operator in the __add__ method to -, reversing the addition to subtraction.
+   - This tests if the code handles the change from adding to subtracting polynomial coefficients.
 2. Mutant 2: Multiplication Mutation
 
-- Changed the * operator in the __mul__ method to +, turning polynomial multiplication into polynomial addition.
-- This tests if the code distinguishes between multiplication and addition.
+   - Changed the * operator in the __mul__ method to +, turning polynomial multiplication into polynomial addition.
+   - This tests if the code distinguishes between multiplication and addition.
 3. Mutant 3: Evaluation Mutation
 
-- Modified the evaluate method to ignore the first coefficient during polynomial evaluation.
-- This tests whether the evaluation method correctly handles the entire polynomial.
+   - Modified the evaluate method to ignore the first coefficient during polynomial evaluation.
+   - This tests whether the evaluation method correctly handles the entire polynomial.
 4. Mutant 4: Logical Mutation
 
-- Changed the equality check == in the __add__ method to !=, altering the logic of the polynomial addition.
-- This tests whether the code catches logical errors in the polynomial addition logic.
+   - Changed the equality check == in the __add__ method to !=, altering the logic of the polynomial addition.
+   - This tests whether the code catches logical errors in the polynomial addition logic.
 
 ## Features
 
