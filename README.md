@@ -28,7 +28,7 @@ The following mutants were introduced into the code, each representing a small c
    - This tests whether the code catches logical errors in the polynomial addition logic.
 
 ## Mutation Testing Process
-1. Each mutant file was placed in the mutants/ folder along with a test file placed in the tests/ folder.
+1. Each mutant file was placed in the /mutants folder along with a test file placed in the tests/ folder.
 2. The pytest testing framework was used to run the tests for each mutant.
 3. The results were evaluated based on whether the tests detected the mutant or not:
    - If the test fails with the mutant, the mutant is considered killed (i.e., the test suite is effective).
