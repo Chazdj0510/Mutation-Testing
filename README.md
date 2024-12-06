@@ -52,6 +52,7 @@ value = poly1.evaluate(2)
 
 # Find a root using the bisection method
 root = poly1.find_root_bisection(0, 5)
+```
 
 ### Running the Example Code
 To run the example usage provided in `polynomials.py`, excute:
