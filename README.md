@@ -26,3 +26,6 @@ This project provides a `Polynomial` class in Python that supports creating, eva
    ```bash
    git clone https://github.com/your-username/repo-name.git
    cd repo-name
+2. Install `pytest`:
+   ```bash
+   pip install pytest
