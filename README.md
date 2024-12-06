@@ -29,3 +29,31 @@ This project provides a `Polynomial` class in Python that supports creating, eva
 2. Install `pytest`:
    ```bash
    pip install pytest
+
+---
+
+## Usage
+
+### Creating and Using Polynomials
+```python
+from polynomial import Polynomial
+
+# Create polynomials
+poly1 = Polynomial([3, 0, 2])  # Represents 3x^2 + 2
+poly2 = Polynomial([1, -1])   # Represents x - 1
+
+# Perform operations
+poly_sum = poly1 + poly2
+poly_diff = poly1 - poly2
+poly_product = poly1 * poly2
+
+# Evaluate a polynomial at x = 2
+value = poly1.evaluate(2)
+
+# Find a root using the bisection method
+root = poly1.find_root_bisection(0, 5)
+
+### Running the Example Code
+To run the example usage provided in `polynomials.py`, excute:
+```bash
+python polynomial.py
