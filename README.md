@@ -1,9 +1,31 @@
-# Mutation-Testing
-# Polynomial Operations in Python
+# Polynomial Operations - Mutation Testing
+## Project Overview
+This project implements basic polynomial operations such as addition, subtraction, multiplication, and evaluation for polynomials represented by their coefficients. The operations are implemented within the `Polynomial.py` class.
 
-This project provides a `Polynomial` class in Python that supports creating, evaluating, and performing various operations on polynomials, such as addition, subtraction, multiplication, and finding roots using the bisection method. Additionally, this repository includes a comprehensive test suite using `pytest`.
+## Mutation Testing Overview
+Mutation testing is a technique used to evaluate the effectiveness of tests by intentionally introducing small modifications (mutants) into the code. If the test suite fails to detect a mutant, it indicates that the test suite is not comprehensive enough to catch certain types of errors.
 
----
+In this project, I created several mutants of the original `Polynomial.py` class to test the robustness of the test suite.
+
+## Mutants Introduced
+The following mutants were introduced into the code, each representing a small change to the logic of the `Polynomial.py` class:
+
+1. Mutant 1: Addition Mutation
+
+- Changed the + operator in the __add__ method to -, reversing the addition to subtraction.
+- This tests if the code handles the change from adding to subtracting polynomial coefficients.
+2. Mutant 2: Multiplication Mutation
+
+- Changed the * operator in the __mul__ method to +, turning polynomial multiplication into polynomial addition.
+- This tests if the code distinguishes between multiplication and addition.
+3. Mutant 3: Evaluation Mutation
+
+- Modified the evaluate method to ignore the first coefficient during polynomial evaluation.
+- This tests whether the evaluation method correctly handles the entire polynomial.
+4. Mutant 4: Logical Mutation
+
+- Changed the equality check == in the __add__ method to !=, altering the logic of the polynomial addition.
+- This tests whether the code catches logical errors in the polynomial addition logic.
 
 ## Features
 
@@ -63,12 +85,12 @@ python polynomial.py
 ---
 
 ## Testing
-The repository includes a test suite (`test_polynomial.py`) to ensure the functionality of the `Polynomial` class. Run the tests using:
+The repository includes a test suite (`test_poly.py`) to ensure the functionality of the `Polynomial` class. Run the tests using:
 ```bash
 pytest test_poly.py
 ```
 
-Sample output:
+Output:
 ```diff
 ==================== test session starts ====================
 ...
@@ -77,6 +99,11 @@ test_poly.py .......                                  [100%]
 
 ==================== 8 passed in 0.12s ====================
 ```
+
+### Mutant Files (After Mutations)
+#### Mutant 1 - Addition Mutation (`mutant1.py`)
+This mutant changes the addition operator (`+`) to a subtraction operator (`-`).
+
 
 ---
 
