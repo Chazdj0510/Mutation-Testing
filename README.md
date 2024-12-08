@@ -28,11 +28,24 @@ The following mutants were introduced into the code, each representing a small c
    - This tests whether the code catches logical errors in the polynomial addition logic.
 
 ## Mutation Testing Process
-1. Each mutant file was placed in the /mutants folder along with a test file placed in the tests/ folder.
+1. Each mutant file was placed in the mutants/ folder along with a test file placed in the tests/ folder.
 2. The pytest testing framework was used to run the tests for each mutant.
 3. The results were evaluated based on whether the tests detected the mutant or not:
    - If the test fails with the mutant, the mutant is considered killed (i.e., the test suite is effective).
    - If the test passes with the mutant, the mutant survives (i.e., the test suite is ineffective against that type of change).
+
+## Test Results
+
+| Mutant                               |   Status   | Test Result |  Notes                                               |
+| :----------------------------------- | :--------: | :---------: | :--------------------------------------------------- |
+| Mutant 1 (Addition Mutation)         |  Killed    |    Fails    | The test suite detected the addition mutation.       | 
+| Mutant 2 (Multiplication Mutation)   |  Killed    |    Fails    | The test suite detected the multiplication mutation. |
+| Mutant 3 (Evaluation Mutation)       |  Killed    |    Fails    | The test suite detected the evaluation mutation.     |
+| Mutant 4 (Logical Mutation)          |  Survived  |    Pass     | The test suite did not detect the logical mutation.  |
+
+## Conclusion
+Mutants Killed: 3 out of 4 mutants were successfully killed by the test suite, indicating that the tests are effective at catching certain types of errors.
+Mutants Survived: 1 mutant survived, which suggests that the test suite could be improved by adding tests for logical correctness in polynomial operations.
 
 ## Features
 
